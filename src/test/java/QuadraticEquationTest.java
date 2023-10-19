@@ -8,7 +8,6 @@ public class QuadraticEquationTest {
     public void solutionTwoRoots() throws Exception {
         QuadraticEquation twoRoots = new QuadraticEquation(1, -5, 6);
         Complex[] roots = twoRoots.solve();
-        System.out.println(roots);
         Assert.assertTrue(roots.length == 2 && roots[0].equals(3.0) && roots[1].equals(2.0));
     }
 
